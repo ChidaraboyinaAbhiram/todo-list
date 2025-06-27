@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body {
+    font-family: "Noto Sans", sans-serif;
+}
+
+.header {
+    font-size: 50px;
+    font-weight: 600;
+    background-color: rgb(2, 6, 7);
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-family: "Nunito", sans-serif;
+}
+
+.content {
+    padding: auto;
+    margin: auto;
+    padding-top: 150px;
+    justify-content: space-between;
+
+}
+
+#task {
+    height: 60px;
+    width: 400px;
+    border-radius: 20px rgba(248, 161, 242, 0.153);
+}
+
+.btn {
+    height: 75px;
+    width: 125px;
+    /* position: absolute; */
+    background-color: #000;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+    /* background: transparent; */
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    display: inline;
+    text-align: center;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 25px;
+    bottom: 0;
+}
+#hold_task {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.showall{
+    background-color: #2e3a4a;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 12px 20px; 
+     margin: 10px 0;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+
+}
+input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+    border-radius: 4px;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #00c897;
+    border-color: #00c897;
+}
+
+input[type="checkbox"]:checked::after {
+    content: '✔';
+    color: white;
+    font-size: 14px;
+    position: absolute;
+    top: -2px;
+    left: 3px;
+}
+button {
+    background-color: transparent;
+    border: none;
+    /* color: #ff6b6b; */
+    font-size: 18px;
+    cursor: pointer;
+    padding: 0 8px;
+    transition: transform 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.2);
+    /* color: #ff2e2e; */
+}
+
